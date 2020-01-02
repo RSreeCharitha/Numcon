@@ -9,20 +9,20 @@
   <body>
     <div class="input-div">
       <form class="" action="index.html" method="post">
-        <label for="decimal"> Decimal Value: </label>
-        <input class="form-control" type="text" placeholder="Decimal Value Here">
-        <label for="decimal"> Binary Value: </label>
-        <input class="form-control" type="text" placeholder="Binary Value Here">
-        <label for="decimal"> Hexadecimal Value: </label>
-        <input class="form-control" type="text" placeholder="Hexadecimal Value Here">
-        <label for="decimal"> Octal Value: </label>
-        <input class="form-control" type="text" placeholder="Octal Value Here">
+        <label for=""> Decimal Value: </label>
+        <input class="dec form-control" type="text" placeholder="Decimal Value Here">
+        <label for=""> Binary Value: </label>
+        <input class="bin form-control" type="text" placeholder="Binary Value Here">
+        <label for=""> Hexadecimal Value: </label>
+        <input class="hex form-control" type="text" placeholder="Hexadecimal Value Here">
+        <label for=""> Octal Value: </label>
+        <input class="oct form-control" type="text" placeholder="Octal Value Here">
 
         <div class="">
-          <button type="button" class="btn btn-outline-info">Clear</button>
+          <button id="clear" type="button" class="btn btn-outline-info">Clear</button>
         </div>
         <div class="">
-            <button type="button" class="btn btn-outline-info">Get</button>
+            <button id="get" type="button" class="btn btn-outline-info" onclick="compute()">Get</button>
         </div>
       </form>
     </div>
