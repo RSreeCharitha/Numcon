@@ -8,7 +8,7 @@ document.getElementById("clear").addEventListener("click", function(){
 //document.getElementById("get").addEventListener("click", compute);
 
 
-function compute() {
+/*function compute() {
   
   var bin = document.getElementsByClassName("bin")[0].value;
   var hex = document.getElementsByClassName("hex")[0].value;
@@ -38,7 +38,34 @@ function compute() {
     document.getElementsByClassName("dec")[0].value = parseInt(oct,8).toString(10);
 
   }
-
   
+}*/
 
+
+function octalTo(){
+	var oct = document.getElementsByClassName("oct")[0].value;
+	document.getElementsByClassName("bin")[0].value = parseInt(oct,8).toString(2);
+    document.getElementsByClassName("hex")[0].value = parseInt(oct,8).toString(16);
+    document.getElementsByClassName("dec")[0].value = parseInt(oct,8).toString(10);
+}
+
+function binTo(){
+	var bin = document.getElementsByClassName("bin")[0].value;
+	document.getElementsByClassName("oct")[0].value = parseInt(bin,2).toString(8);
+    document.getElementsByClassName("hex")[0].value = parseInt(bin,2).toString(16);
+    document.getElementsByClassName("dec")[0].value = parseInt(bin,2).toString(10);
+}
+
+function decTo(){
+	var dec = document.getElementsByClassName("dec")[0].value;
+	document.getElementsByClassName("oct")[0].value = parseInt(dec,10).toString(8);
+  document.getElementsByClassName("hex")[0].value = parseInt(dec,10).toString(16);
+  document.getElementsByClassName("bin")[0].value = parseInt(dec,10).toString(2);
+}
+
+function hexTo(){
+	var hex = document.getElementsByClassName("hex")[0].value;
+	document.getElementsByClassName("oct")[0].value = parseInt(hex,16).toString(8);
+    document.getElementsByClassName("bin")[0].value = parseInt(hex,16).toString(2);
+    document.getElementsByClassName("dec")[0].value = parseInt(hex,16).toString(10);
 }
