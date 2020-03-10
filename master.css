@@ -1,5 +1,10 @@
-.input-div{
-  padding: 10% 40%;
+.bow{
+  width: 25%;
+  padding: 0%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 .badge{
   border-radius:0;
@@ -8,9 +13,6 @@
 .btns{
   padding-top: 20px;
 }
-
-
-
 .foot{
   position: absolute;
   left: 42%;
