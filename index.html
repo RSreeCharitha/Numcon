@@ -7,39 +7,34 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
     <link rel="stylesheet" href="master.css">
   </head>
   <body>
-    <div class="input-div">
-      <form class="" action="index.html" method="post">
-        <div class="text">
-          <label for=""> Decimal Value: </label>
-          <input class="dec form-control" type="text" placeholder="Decimal Value Here">
-          <label for=""> Binary Value: </label>
-          <input class="bin form-control" type="text" placeholder="Binary Value Here">
-          <label for=""> Hexadecimal Value: </label>
-          <input class="hex form-control" type="text" placeholder="Hexadecimal Value Here">
-          <label for=""> Octal Value: </label>
-          <input class="oct form-control" type="text" placeholder="Octal Value Here">
-
+    <div class="container">
+      <div class="row bow">
+        <div class="col-12">
+          <form class="" action="index.html" method="post">
+            <label for=""> Decimal Value: </label>
+            <input onchange="decTo()" class="dec form-control" type="text" placeholder="Decimal Value Here">
+            <label for=""> Binary Value: </label>
+            <input onchange="binTo()" class="bin form-control" type="text" placeholder="Binary Value Here">
+            <label for=""> Hexadecimal Value: </label>
+            <input onchange="hexTo()" class="hex form-control" type="text" placeholder="Hexadecimal Value Here">
+            <label for=""> Octal Value: </label>
+            <input onchange="octalTo()" class="oct form-control" type="text" placeholder="Octal Value Here">
+          <div class="btns">
+            <button id="clear" type="button" class="btn btn-outline-info">Clear</button>
+          </div>
+        </form>
         </div>
-
-        <div class="btns">
-          <button id="clear" type="button" class="btn btn-outline-info">Clear</button>
-          <button id="get" type="button" class="btn btn-outline-dark" onclick="compute()">Get</button>
-        </div>
-        
-      </form>
+      </div>
     </div>
-    <div class="badges">
-      <h1><span class="badge badge-dark">Made with <span class="badge badge-warning">JS</span></span></h1>
-    </div>
-
+          <div class="badges">
+            <h1><span class="badge badge-dark">Made with <span class="badge badge-warning">JS</span></span></h1>
+          </div>
     <p class="foot">
       www.github.com/rsreecharitha
-    </p>
-  
+    </p>  
     <script src="index.js" charset="utf-8"></script>
   </body>
 </html>
